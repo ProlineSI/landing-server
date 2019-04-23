@@ -121,7 +121,7 @@
 @media (max-width: 450px) {
   .google-map-area .map-image-warpper .placeholder .map-meta-data {width: 300px;}
   .theme-main-header {text-align: center;padding-top: 35px;}
-  .theme-main-header .logo {width: 100%;margin-bottom: 25px;}
+  .theme-main-header .logo {width: 100%;margin-bottom: 25px; margin-left: 8%;}
   .theme-main-header .button-group {width: 100%;}
   .theme-main-header .button-group li {margin: 0 3px;}
   .blog-details .comment-area .comment-section .comment button {position: static;margin-top: 15px;}
