@@ -348,7 +348,7 @@ ul.event-menu li a{
   margin-left: 15px;
   border: none !important;
   transition: all 0.5s;
-  text-transform: lowercase !important;
+  text-transform: uppercase !important;
 }
 ul.event-menu li a:hover{
   background: transparent !important;
