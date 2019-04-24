@@ -39,6 +39,7 @@
   .testimonial-section .main-bg-wrapper .main-slider-wrapper {-webkit-transform:none;transform:none;height: 100%;}
   .advance-feature {padding-bottom: 130px;}
   .contact-us-section .contact-us-form {padding-right: 0;}
+  ul.event-menu{margin-right: 35%;}
 }
 /*(max-width: 1199px)*/
 
@@ -67,9 +68,10 @@
   footer .bottom-footer ul.footer-menu li a {margin-left: 10px;margin-right: 10px;}
   .blog-details .wrapper {width: 100%;}
   .blog-details .blog-main-post h2 {padding-right: 0;}
-  #theme-main-banner .camera_caption .container .image-wrapper {display: none;}
+  #theme-main-banner .camera_caption .container .image-wrapper {right: -140px;top: 155px;}
   #theme-main-banner .camera_caption .container h5 {margin-top: 150px;}
   #theme-main-banner {height: 800px !important;}
+  ul.event-menu{margin-right: 15%;}
 }
 /*(max-width: 991px)*/
 
@@ -78,6 +80,14 @@
 }
 /*(min-width: 768px) and (max-width: 991px)*/
 
+@media (max-width: 830px) {
+  #theme-main-banner .camera_caption .container .image-wrapper img {
+    width: 90% !important;
+    height: 80%;
+  }
+  #theme-main-banner .camera_caption .container .image-wrapper {right: -50px;top: 200px;}
+} 
+
 @media (max-width: 767px) {
   .app-screenshot .screenshot-container .phone-mockup {display: none;}
   .testimonial-section .main-bg-wrapper {height: auto;}
@@ -85,6 +95,7 @@
   .testimonial-section .main-bg-wrapper .overlay {padding-bottom: 150px;}
   #watch-video {bottom: 40px;}
   .app-screenshot h2 {margin-bottom: 40px;}
+  ul.event-menu{margin-right: 0%;}
 }
 /*(max-width: 767px)*/
 
@@ -98,18 +109,25 @@
     margin:0;
   }
   .our-blog {padding: 0 15px;}
+
+  ul.event-menu{margin-right: -10%;}
   
 }
 @media (max-width: 600px) {
   .what-we-do .single-block {margin-top: 30px;}
   footer .footer-data-wrapper {padding: 0;}
   #theme-main-banner .camera_caption .container h1 br,#theme-main-banner .camera_caption .container p br {display: none;}
+  #theme-main-banner .camera_caption .container .image-wrapper {right: 60px;top: 300px;}
+  #theme-main-banner .camera_caption .container .image-wrapper img {width: 70% !important;}
+  ul.event-menu{margin-right: -20%;}
 }
 @media (max-width: 550px) {
   .theme-title-one h2 {font-size: 34px;line-height: 48px;}
   .testimonial-section .main-bg-wrapper .main-slider-wrapper {max-width: initial;padding-left: 15px;padding-right: 15px;}
   .testimonial-section .owl-theme .owl-dots {right: 0;}
   .blog-details .tag-option ul {width: 100%;}
+  ul.event-menu{margin-right: -27%;}
+  #theme-main-banner .camera_caption .container h1{font-size: 300%;}
 }
 @media (max-width: 500px) {
   .boost-your-phone .boster-image-wrapper .ao-annotations {padding-top: 40px;}
@@ -117,14 +135,15 @@
   .advance-feature .feature-warpper .col-xs-6 {width: 100%;}
   .advance-feature .feature-warpper .single-feature.m-fix {margin-top: 0;}
   .our-blog .col-xs-6 {width: 100%;}
+  .theme-main-header .button-group {width: 100%;}
+  .theme-main-header {text-align: center;padding-top: 35px;}
+  .theme-main-header .logo {width: 100%;margin-bottom: 25px; margin-left: 0%;}  
+  ul.event-menu{left: 0%; width: 100%; text-align: center;}
 }
 @media (max-width: 450px) {
   .google-map-area .map-image-warpper .placeholder .map-meta-data {width: 300px;}
-  .theme-main-header {text-align: center;padding-top: 35px;}
-  .theme-main-header .logo {width: 100%;margin-bottom: 25px; margin-left: 8%;}
-  .theme-main-header .button-group {width: 100%;}
-  .theme-main-header .button-group li {margin: 0 3px;}
   .blog-details .comment-area .comment-section .comment button {position: static;margin-top: 15px;}
+  #theme-main-banner .camera_caption .container .image-wrapper {right: 60px;top: 300px !important;}
 }
 @media (max-width: 420px) {
   .blog-details .blog-main-post h2 {font-size: 25px;padding-left: 50px;}
@@ -143,6 +162,9 @@
   .contact-address a.tran3s.call {font-size: 20px;}
   .contact-address p.comunicate {font-size: 20px;}
   .theme-main-header .logo img {width: 80%;}
+  #theme-main-banner .camera_caption .container .image-wrapper {right: 60px;top: 220px;}
+  #theme-main-banner .camera_caption .container .image-wrapper img {width: 80% !important;}
+  .theme-main-header .logo {width: 100%;margin-bottom: 25px; margin-left: 8%;}
 }
 @media (max-width: 380px) {
   .pricing-plan-section .nav-tabs > li > a {width: 134px;}
@@ -154,4 +176,8 @@
   .theme-title-one h3 {font-size: 25px;}
   .contact-address p.comunicate {font-size: 18px; line-height: 20px;}
   .contact-address a.tran3s.call {font-size: 16px;}
+  #theme-main-banner .camera_caption .container .image-wrapper img {width: 90% !important;}
+}
+@media (max-width: 340px) {
+  #theme-main-banner .camera_caption .container .image-wrapper {right: 60px;top: 350px !important;}
 }

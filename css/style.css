@@ -123,6 +123,26 @@
   font-size: 18px;
   position: relative;
  }
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( 180deg, rgb(26,192,237) 20%, rgb(43,236,220) 100%); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient( 180deg, rgb(26,192,237) 20%, rgb(43,236,220) 100%);
+}
 .main-page-wrapper {
   overflow-x:hidden;
 }
@@ -279,11 +299,11 @@
   padding-top: 65px;
   z-index: 999;
 }
-.theme-main-header .button-group li {
+.theme-main-header .button-group a {
   display: inline-block;
 }
-.theme-main-header .button-group li:first-child {margin-right: 5px;}
-.theme-main-header .button-group li a {
+.theme-main-header .button-group a:first-child {margin-right: 5px;}
+.theme-main-header .button-group a {
   width: 120px;
   line-height: 36px;
   font-weight: 500;
@@ -294,13 +314,51 @@
   font-size: 16px;
   letter-spacing: 1px;
   border-radius: 20px;
+  z-index: 1;
 }
-.theme-main-header .button-group li a.login {border-color: #fff;}
-.theme-main-header .button-group li a:hover,
-.theme-main-header .button-group li a.login:hover {
+.theme-main-header .button-group a.login {border-color: #fff;}
+.theme-main-header .button-group a:hover,
+.theme-main-header .button-group a.login:hover {
   background: #fff;
   border-color: #fff;
   color: rgba(0,0,0,0.8);
+}
+.menu-active{
+  background: #fff;
+  border-color: #fff;
+  color: rgba(0,0,0,0.8) !important;
+  border-radius: 20px 20px 0 0 !important;
+}
+ul.event-menu{
+  border-radius: 20px;
+  padding: 0;
+  position: relative !important;
+  top: 0px;
+  left: -15.5px;
+  display: none;
+  background: rgb(243, 243, 243);
+  border: 1px solid #fff !important;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 48%;
+}
+ul.event-menu li a{
+  color: rgba(0,0,0,0.8) !important;
+  padding: 5px 0 0 0;
+  margin-left: 15px;
+  border: none !important;
+  transition: all 0.5s;
+  text-transform: lowercase !important;
+}
+ul.event-menu li a:hover{
+  background: transparent !important;
+  border: none !important;
+}
+ul.event-menu li:hover a{
+  transform: scale(1.1);
+} 
+.theme-main-header .button-group {
+  width: 25%;
 }
 /*** 
 

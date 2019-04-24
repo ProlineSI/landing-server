@@ -649,3 +649,28 @@ jQuery(window).on('load', function () {
       particalBGthree ()
   })(jQuery);
  });
+ 
+var event_status = false;
+$('a.login').on('click', function(){
+  if(event_status == false){
+    $('.event-menu').slideDown(400);
+    $('a.login').addClass('menu-active');
+    $('a.login span.down-icon').css({'transform':'rotateZ(-180deg)',  
+                                    WebkitTransition : 'all 0.500s',
+                                    MozTransition    : 'all 0.500s',
+                                    MsTransition     : 'all 0.500s',
+                                    OTransition      : 'all 0.500s', 
+                                    'transition': 'all 0.500s'})
+    event_status = true;
+  }else{
+    $('.event-menu').slideUp(400);
+    $('a.login').removeClass('menu-active');
+    $('a.login span.down-icon').css({'transform':'rotateZ(0deg)',  
+                                    WebkitTransition : 'all 0.500s',
+                                    MozTransition    : 'all 0.500s',
+                                    MsTransition     : 'all 0.500s',
+                                    OTransition      : 'all 0.500s', 
+                                    'transition': 'all 0.500s'})
+    event_status = false;
+  }
+})
