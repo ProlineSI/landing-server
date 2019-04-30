@@ -1,6 +1,6 @@
 <?php
 
-    $to = "contacto@nativos.digital";
+    $to = "info@accessgo.com.ar";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "From: $from";
